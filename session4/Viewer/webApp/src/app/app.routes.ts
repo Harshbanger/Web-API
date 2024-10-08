@@ -4,7 +4,7 @@ import { FriendsComponent } from './friends/friends.component';
 import { ProfileComponent } from './profile/profile.component';
 
 export const routes: Routes = [
-    {path:"/" , component:HomeComponent},
+    {path:"home" , component:HomeComponent},
     {path:"friends" , component:FriendsComponent},
-    {path:"/profile" , component:ProfileComponent},
+    {path:"profile" , component:ProfileComponent},
 ];
