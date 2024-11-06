@@ -1,6 +1,5 @@
 // src/app/student-list/student-list.component.ts
 import { Component, OnInit } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http'; // Import HttpClientModule
 import { StudentService } from '../student.service';
 
 @Component({
@@ -13,8 +12,7 @@ import { StudentService } from '../student.service';
       </li>
     </ul>
   `,
-  standalone: true,
-  imports: [HttpClientModule] // Add HttpClientModule here
+  standalone: true
 })
 export class StudentListComponent implements OnInit {
   students: any[] = [];
