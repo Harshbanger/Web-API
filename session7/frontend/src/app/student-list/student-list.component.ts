@@ -1,5 +1,6 @@
 // src/app/student-list/student-list.component.ts
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common'; // Import CommonModule
 import { StudentService } from '../student.service';
 
 @Component({
@@ -12,7 +13,8 @@ import { StudentService } from '../student.service';
       </li>
     </ul>
   `,
-  standalone: true
+  standalone: true,
+  imports: [CommonModule] // Add CommonModule here to enable *ngFor
 })
 export class StudentListComponent implements OnInit {
   students: any[] = [];
